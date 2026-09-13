@@ -1,0 +1,979 @@
+{
+  "indexed_at": "2026-09-13",
+  "scope": "文件清点、文本提取状态；表格仅结构抽样，不代表逐页审计",
+  "files": [
+    {
+      "path": "YPID国家药品编码信息标准库（V9.0）.xlsx",
+      "bytes": 80082263,
+      "status": "schema-sampled",
+      "characters": 7821,
+      "group": "根目录资料"
+    },
+    {
+      "path": "互联网医院管理制度/不良事件和安全隐患报告管理办法.docx",
+      "bytes": 20041,
+      "status": "extracted",
+      "characters": 897,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/不良事件和安全隐患报告管理办法.pdf",
+      "bytes": 144676,
+      "status": "extracted",
+      "characters": 991,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医疗服务管理制度.docx",
+      "bytes": 21936,
+      "status": "extracted",
+      "characters": 2816,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医疗服务管理制度.pdf",
+      "bytes": 198968,
+      "status": "extracted",
+      "characters": 2991,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医疗质量控制与评价制度.docx",
+      "bytes": 16497,
+      "status": "extracted",
+      "characters": 1090,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医疗质量控制与评价制度.pdf",
+      "bytes": 427802,
+      "status": "extracted",
+      "characters": 1398,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院信息系统使用管理制度.docx",
+      "bytes": 16050,
+      "status": "extracted",
+      "characters": 993,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院信息系统使用管理制度.pdf",
+      "bytes": 188914,
+      "status": "extracted",
+      "characters": 1173,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院制度.zip",
+      "bytes": 259110,
+      "status": "indexed-only",
+      "characters": 0,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院服务规范流程.docx",
+      "bytes": 18534,
+      "status": "extracted",
+      "characters": 870,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院服务规范流程.pdf",
+      "bytes": 410833,
+      "status": "extracted",
+      "characters": 1126,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院相关部门及人员岗位职责.docx",
+      "bytes": 26777,
+      "status": "extracted",
+      "characters": 3527,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网医院相关部门及人员岗位职责.pdf",
+      "bytes": 209234,
+      "status": "extracted",
+      "characters": 3836,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/互联网诊疗信息系统使用管理制度.docx",
+      "bytes": 16410,
+      "status": "extracted",
+      "characters": 976,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/人员培训考核制度.docx",
+      "bytes": 20727,
+      "status": "extracted",
+      "characters": 1167,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/人员培训考核制度.pdf",
+      "bytes": 153379,
+      "status": "extracted",
+      "characters": 1257,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/停电、断网、设备故障、信息泄露等突发事件的应急预案.pdf",
+      "bytes": 180069,
+      "status": "extracted",
+      "characters": 1382,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/停电、断网、设备故障等突发事件的应急预案.docx",
+      "bytes": 19644,
+      "status": "extracted",
+      "characters": 723,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/医疗质量安全管理制度.docx",
+      "bytes": 45011,
+      "status": "extracted",
+      "characters": 3223,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/在线医疗文书管理制度.docx",
+      "bytes": 21509,
+      "status": "extracted",
+      "characters": 1599,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/在线医疗文书管理制度.pdf",
+      "bytes": 173128,
+      "status": "extracted",
+      "characters": 1737,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/在线处方管理制度.docx",
+      "bytes": 19972,
+      "status": "extracted",
+      "characters": 2547,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/在线处方管理制度.pdf",
+      "bytes": 224932,
+      "status": "extracted",
+      "characters": 3132,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/在线复诊患者风险评估与突发状况预防处置制度.docx",
+      "bytes": 19774,
+      "status": "extracted",
+      "characters": 799,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/在线复诊患者风险评估与突发状况预防处置制度.pdf",
+      "bytes": 160080,
+      "status": "extracted",
+      "characters": 896,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/患者知情同意与登记制度.docx",
+      "bytes": 19831,
+      "status": "extracted",
+      "characters": 3289,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/患者知情同意与登记制度.pdf",
+      "bytes": 243732,
+      "status": "extracted",
+      "characters": 3774,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/患者隐私保护制度.docx",
+      "bytes": 16218,
+      "status": "extracted",
+      "characters": 1003,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/患者隐私保护制度.pdf",
+      "bytes": 434388,
+      "status": "extracted",
+      "characters": 1179,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/投诉接待管理制度.docx",
+      "bytes": 44553,
+      "status": "extracted",
+      "characters": 2531,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/网络信息安全的应急预案.docx",
+      "bytes": 17063,
+      "status": "extracted",
+      "characters": 1459,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网医院管理制度/网络信息安全的应急预案.pdf",
+      "bytes": 163231,
+      "status": "extracted",
+      "characters": 1615,
+      "group": "互联网医院管理制度"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/3.壹康科技与移动云合作协议.pdf",
+      "bytes": 412697,
+      "status": "extracted",
+      "characters": 12432,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/3.壹康科技（青岛）有限公司-互联网医院系统-备案证明（三级）.pdf",
+      "bytes": 129109,
+      "status": "needs-visual-or-ocr",
+      "characters": 2,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/6.顺丰收派服务合同（济南）.docx",
+      "bytes": 371071,
+      "status": "extracted",
+      "characters": 43069,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/6.顺丰收派服务合同（青岛）.docx",
+      "bytes": 313895,
+      "status": "extracted",
+      "characters": 43088,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/[济南]委托书.doc",
+      "bytes": 18577,
+      "status": "extracted",
+      "characters": 562,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/[济南]材料真实性保证书.docx",
+      "bytes": 10985,
+      "status": "extracted",
+      "characters": 147,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/“信用+承诺”行政审批告知承诺书.doc",
+      "bytes": 39936,
+      "status": "extracted",
+      "characters": 4625,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/互联网医疗服务管理制度（打印上墙）.docx",
+      "bytes": 16460,
+      "status": "extracted",
+      "characters": 2780,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/互联网医院执业登记现场审查工作指引.pdf",
+      "bytes": 284857,
+      "status": "extracted",
+      "characters": 7355,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/互联网医院线下实勘检查打印文件.docx",
+      "bytes": 245610,
+      "status": "extracted",
+      "characters": 28058,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/互联网医院设备清单.xlsx",
+      "bytes": 9567,
+      "status": "schema-sampled",
+      "characters": 262,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/互联网诊疗申请书.doc",
+      "bytes": 16384,
+      "status": "extracted",
+      "characters": 1122,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/信息系统人员名单.docx",
+      "bytes": 13759,
+      "status": "extracted",
+      "characters": 393,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/医疗机构变更登记.docx",
+      "bytes": 20915,
+      "status": "extracted",
+      "characters": 2934,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/医疗机构变更登记申请书（互联网增项）.doc",
+      "bytes": 44032,
+      "status": "extracted",
+      "characters": 1366,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/开展互联网诊疗活动的卫生技术人员名录.docx",
+      "bytes": 87998,
+      "status": "extracted",
+      "characters": 263,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/承诺书.doc",
+      "bytes": 11776,
+      "status": "extracted",
+      "characters": 320,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/服务公示信息（发布到小程序）.docx",
+      "bytes": 13952,
+      "status": "extracted",
+      "characters": 1102,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/系统功能清单.docx",
+      "bytes": 17198,
+      "status": "extracted",
+      "characters": 751,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/经办人证明.docx",
+      "bytes": 17452,
+      "status": "extracted",
+      "characters": 175,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗:医院线下审批准备材料/西海岸新区卫生健康领域信用审批告知承诺书.doc",
+      "bytes": 34304,
+      "status": "extracted",
+      "characters": 2691,
+      "group": "互联网诊疗:医院线下审批准备材料"
+    },
+    {
+      "path": "互联网诊疗制度.docx",
+      "bytes": 15590,
+      "status": "extracted",
+      "characters": 1661,
+      "group": "根目录资料"
+    },
+    {
+      "path": "互联网诊疗医师、药师备案.doc",
+      "bytes": 167936,
+      "status": "extracted",
+      "characters": 199,
+      "group": "根目录资料"
+    },
+    {
+      "path": "互联网诊疗服务合作运营协议模版.docx",
+      "bytes": 28107,
+      "status": "extracted",
+      "characters": 2639,
+      "group": "根目录资料"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_互联网申请书及可行性报告参考样本.docx",
+      "bytes": 17432,
+      "status": "extracted",
+      "characters": 1208,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_医疗机构变更承诺书.docx",
+      "bytes": 14149,
+      "status": "extracted",
+      "characters": 307,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_医疗机构变更承诺书（示范）.docx",
+      "bytes": 14228,
+      "status": "extracted",
+      "characters": 302,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_医疗机构变更登记申请书.docx",
+      "bytes": 23166,
+      "status": "extracted",
+      "characters": 2375,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_医疗机构变更登记申请书（示范）.docx",
+      "bytes": 20915,
+      "status": "extracted",
+      "characters": 2934,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_经办人证明.docx",
+      "bytes": 16588,
+      "status": "extracted",
+      "characters": 141,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请参阅模板/模版_经办人证明（示范）.docx",
+      "bytes": 17452,
+      "status": "extracted",
+      "characters": 175,
+      "group": "互联网诊疗申请参阅模板"
+    },
+    {
+      "path": "互联网诊疗申请注意事项.pdf",
+      "bytes": 2337846,
+      "status": "extracted",
+      "characters": 3542,
+      "group": "根目录资料"
+    },
+    {
+      "path": "互联网诊疗配置信息收集表.xlsx",
+      "bytes": 10849,
+      "status": "schema-sampled",
+      "characters": 565,
+      "group": "根目录资料"
+    },
+    {
+      "path": "医疗机构与第三方共同建设系统开展互联网诊疗服务合同（上和版）.docx",
+      "bytes": 26609,
+      "status": "extracted",
+      "characters": 6246,
+      "group": "根目录资料"
+    },
+    {
+      "path": "医疗机构与第三方共同建设系统开展互联网诊疗服务合同（模板）.docx",
+      "bytes": 25945,
+      "status": "extracted",
+      "characters": 6095,
+      "group": "根目录资料"
+    },
+    {
+      "path": "医院互联网医院管理制度.doc",
+      "bytes": 180776,
+      "status": "extracted",
+      "characters": 20809,
+      "group": "根目录资料"
+    },
+    {
+      "path": "国家三大文件/23.01.29关于印发《山东省互联网诊疗管理实施办法》的通知.docx",
+      "bytes": 159028,
+      "status": "extracted",
+      "characters": 14251,
+      "group": "国家三大文件"
+    },
+    {
+      "path": "国家三大文件/23.01.29关于印发《山东省互联网诊疗管理实施办法》的通知.pdf",
+      "bytes": 913934,
+      "status": "extracted",
+      "characters": 17419,
+      "group": "国家三大文件"
+    },
+    {
+      "path": "国家三大文件/【2018】25号-互联网医院管理办法（试行）.docx",
+      "bytes": 18541,
+      "status": "extracted",
+      "characters": 4592,
+      "group": "国家三大文件"
+    },
+    {
+      "path": "国家三大文件/【2018】25号-互联网诊疗管理办法（试行）.docx",
+      "bytes": 18022,
+      "status": "extracted",
+      "characters": 2671,
+      "group": "国家三大文件"
+    },
+    {
+      "path": "国家三大文件/【2018】25号-远程医疗服务管理规范（试行）.docx",
+      "bytes": 17071,
+      "status": "extracted",
+      "characters": 3302,
+      "group": "国家三大文件"
+    },
+    {
+      "path": "小程序相关/不涉及广播电影电视前置审批的承诺书.doc",
+      "bytes": 12700,
+      "status": "extracted",
+      "characters": 485,
+      "group": "小程序相关"
+    },
+    {
+      "path": "小程序相关/不涉及教育培训前置审批.doc",
+      "bytes": 16538,
+      "status": "extracted",
+      "characters": 474,
+      "group": "小程序相关"
+    },
+    {
+      "path": "小程序相关/不涉及文化前置审批.doc",
+      "bytes": 12526,
+      "status": "extracted",
+      "characters": 476,
+      "group": "小程序相关"
+    },
+    {
+      "path": "小程序相关/不涉及药品及医疗器械前置审批-承诺书承诺书模版.doc",
+      "bytes": 13312,
+      "status": "extracted",
+      "characters": 348,
+      "group": "小程序相关"
+    },
+    {
+      "path": "小程序相关/小程序服务承诺书.docx",
+      "bytes": 13074,
+      "status": "extracted",
+      "characters": 320,
+      "group": "小程序相关"
+    },
+    {
+      "path": "山东省监管平台政策/关于配合省监管平台数据上报要求的整改说明.docx",
+      "bytes": 395419,
+      "status": "extracted",
+      "characters": 463,
+      "group": "山东省监管平台政策"
+    },
+    {
+      "path": "山东省监管平台政策/山东省卫生健康委员会关于进一步加强互联网诊疗服务的通知.pdf",
+      "bytes": 908546,
+      "status": "extracted",
+      "characters": 4271,
+      "group": "山东省监管平台政策"
+    },
+    {
+      "path": "山东省监管平台政策/附件2-省监管服务平台对接情况整改进度表.xlsx",
+      "bytes": 11558,
+      "status": "schema-sampled",
+      "characters": 643,
+      "group": "山东省监管平台政策"
+    },
+    {
+      "path": "申请方式/企业独立设置互联网医院.pdf",
+      "bytes": 3127811,
+      "status": "extracted",
+      "characters": 3882,
+      "group": "申请方式"
+    },
+    {
+      "path": "申请方式/医疗机构与第三方合作申请互联网医院.pdf",
+      "bytes": 2925550,
+      "status": "extracted",
+      "characters": 3213,
+      "group": "申请方式"
+    },
+    {
+      "path": "申请方式/医疗机构与第三方合作申请互联网诊疗.pdf",
+      "bytes": 2853646,
+      "status": "extracted",
+      "characters": 2959,
+      "group": "申请方式"
+    },
+    {
+      "path": "申请方式/医疗机构独立申请互联网诊疗.pdf",
+      "bytes": 2322809,
+      "status": "extracted",
+      "characters": 2817,
+      "group": "申请方式"
+    },
+    {
+      "path": "申请流程/申请-互联网诊疗申请备案流程.doc",
+      "bytes": 4534272,
+      "status": "extracted",
+      "characters": 2197,
+      "group": "申请流程"
+    },
+    {
+      "path": "申请流程/申请-互联网诊疗省平台监管流程.docx",
+      "bytes": 2183977,
+      "status": "extracted",
+      "characters": 2681,
+      "group": "申请流程"
+    },
+    {
+      "path": "监管平台所有字典v2.1.xlsx",
+      "bytes": 1212443,
+      "status": "schema-sampled",
+      "characters": 10408,
+      "group": "根目录资料"
+    },
+    {
+      "path": "省监管平台对接资料/互联网诊疗部门规章制度，岗位职责（服务站）.zip",
+      "bytes": 20529036,
+      "status": "indexed-only",
+      "characters": 0,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/互联网诊疗部门规章制度，岗位职责（诊所）.zip",
+      "bytes": 22483798,
+      "status": "indexed-only",
+      "characters": 0,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/互联网诊疗部门规章制度，岗位职责（门诊部）.zip",
+      "bytes": 1243752,
+      "status": "indexed-only",
+      "characters": 0,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/名称申请-互联网医院可行性报告V2.0.docx",
+      "bytes": 88313,
+      "status": "extracted",
+      "characters": 1288,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/名称申请-互联网医院申请书V2.0.docx",
+      "bytes": 16839,
+      "status": "extracted",
+      "characters": 739,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/名称申请-互联网诊疗可行性报告V2.0.docx",
+      "bytes": 91192,
+      "status": "extracted",
+      "characters": 1235,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/名称申请-互联网诊疗可行性报告（诊所）V2.0.docx",
+      "bytes": 85791,
+      "status": "extracted",
+      "characters": 1169,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/名称申请-互联网诊疗申请书V2.0.docx",
+      "bytes": 19686,
+      "status": "extracted",
+      "characters": 719,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/名称申请-互联网诊疗申请书（诊所）V2.0.docx",
+      "bytes": 12874,
+      "status": "extracted",
+      "characters": 648,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/科室人员-药师工作证明.docx",
+      "bytes": 14114,
+      "status": "extracted",
+      "characters": 277,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门岗位职责.pdf",
+      "bytes": 100984,
+      "status": "extracted",
+      "characters": 923,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门岗位职责（服务站）.pdf",
+      "bytes": 103185,
+      "status": "extracted",
+      "characters": 865,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门岗位职责（诊所）.pdf",
+      "bytes": 389676,
+      "status": "extracted",
+      "characters": 845,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门岗位职责（门诊部）.pdf",
+      "bytes": 103380,
+      "status": "extracted",
+      "characters": 862,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门规章制度(诊所).pdf",
+      "bytes": 394375,
+      "status": "extracted",
+      "characters": 1257,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门规章制度(门诊部).pdf",
+      "bytes": 111244,
+      "status": "extracted",
+      "characters": 1286,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门规章制度.pdf",
+      "bytes": 101831,
+      "status": "extracted",
+      "characters": 1229,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-信息技术与管理部门规章制度（服务站）.pdf",
+      "bytes": 87910,
+      "status": "extracted",
+      "characters": 1289,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门岗位职责(诊所).pdf",
+      "bytes": 354826,
+      "status": "extracted",
+      "characters": 571,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门岗位职责(门诊部).pdf",
+      "bytes": 86098,
+      "status": "extracted",
+      "characters": 580,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门岗位职责.pdf",
+      "bytes": 60908,
+      "status": "extracted",
+      "characters": 559,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门岗位职责（服务站）.pdf",
+      "bytes": 82164,
+      "status": "extracted",
+      "characters": 563,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门规章制度.pdf",
+      "bytes": 379260,
+      "status": "extracted",
+      "characters": 655,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门规章制度（服务站）.pdf",
+      "bytes": 92133,
+      "status": "extracted",
+      "characters": 656,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门规章制度（诊所）.pdf",
+      "bytes": 379256,
+      "status": "extracted",
+      "characters": 652,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗安全管理部门规章制度（通用）.pdf",
+      "bytes": 92170,
+      "status": "extracted",
+      "characters": 657,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门岗位职责(通用).pdf",
+      "bytes": 84976,
+      "status": "extracted",
+      "characters": 584,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门岗位职责.pdf",
+      "bytes": 373498,
+      "status": "extracted",
+      "characters": 584,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门岗位职责（服务站）.pdf",
+      "bytes": 85112,
+      "status": "extracted",
+      "characters": 593,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门岗位职责（诊所）.pdf",
+      "bytes": 373686,
+      "status": "extracted",
+      "characters": 583,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门规章制度.pdf",
+      "bytes": 103242,
+      "status": "extracted",
+      "characters": 1287,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门规章制度（服务站）.pdf",
+      "bytes": 111759,
+      "status": "extracted",
+      "characters": 1263,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门规章制度（诊所）.pdf",
+      "bytes": 433786,
+      "status": "extracted",
+      "characters": 1259,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-医疗质量管理部门规章制度（门诊部）.pdf",
+      "bytes": 115763,
+      "status": "extracted",
+      "characters": 1292,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-药学服务部门岗位职责.pdf",
+      "bytes": 346595,
+      "status": "extracted",
+      "characters": 491,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-药学服务部门岗位职责（服务站）.pdf",
+      "bytes": 75276,
+      "status": "extracted",
+      "characters": 498,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-药学服务部门岗位职责（诊所）.pdf",
+      "bytes": 346690,
+      "status": "extracted",
+      "characters": 492,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-药学服务部门岗位职责（门诊部）.pdf",
+      "bytes": 75268,
+      "status": "extracted",
+      "characters": 500,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/职能科室-药学服务部门规章制度.pdf",
+      "bytes": 351208,
+      "status": "extracted",
+      "characters": 497,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/诊疗系统-互联网诊疗技术操作手册（截止2025年2月）.pdf",
+      "bytes": 1616027,
+      "status": "extracted",
+      "characters": 85054,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/诊疗系统-信息系统安全等级保护备案证明.pdf",
+      "bytes": 1877902,
+      "status": "needs-visual-or-ocr",
+      "characters": 1,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "省监管平台对接资料/诊疗系统-信息系统安全等级保护测评报告.pdf",
+      "bytes": 17683140,
+      "status": "extracted",
+      "characters": 409070,
+      "group": "省监管平台对接资料"
+    },
+    {
+      "path": "系统相关/LIS操作手册.doc",
+      "bytes": 2261504,
+      "status": "extracted",
+      "characters": 15511,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/LIS操作手册.pdf",
+      "bytes": 6093678,
+      "status": "extracted",
+      "characters": 162757,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/中联his系统影像管理系统操作手册.docx",
+      "bytes": 1436960,
+      "status": "extracted",
+      "characters": 13572,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/中联his系统影像管理系统操作手册.pdf",
+      "bytes": 2786353,
+      "status": "extracted",
+      "characters": 57038,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/安博维MedInfo电子病历(EMR)模板编辑器使用手册-V3.0.doc",
+      "bytes": 12647936,
+      "status": "empty-text-use-pdf-counterpart",
+      "characters": 0,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/安博维MedInfo电子病历(EMR)模板编辑器使用手册-V3.0.pdf",
+      "bytes": 2149864,
+      "status": "extracted",
+      "characters": 36833,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/达瑞康云HIS操作手册.doc",
+      "bytes": 11947008,
+      "status": "empty-text-use-pdf-counterpart",
+      "characters": 0,
+      "group": "系统相关"
+    },
+    {
+      "path": "系统相关/达瑞康云HIS操作手册.pdf",
+      "bytes": 9899491,
+      "status": "extracted",
+      "characters": 39068,
+      "group": "系统相关"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "壹康互联网诊疗申报助手"
+  short_description: "互联网诊疗与互联网医院科普、山东申报路径评估及壹康科技咨询引导"
+  default_prompt: "使用 $shandong-internet-hospital，结合我的机构所在地、资质和业务需求，判断互联网诊疗申报路径、材料缺口与下一步安排。"

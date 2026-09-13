@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网诊疗审批流程图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+            border-radius: 16px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 15px;
+            color: rgba(255,255,255,0.85);
+        }
+        
+        .phase {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .phase-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid;
+        }
+        
+        .phase-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .phase-title-group {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .phase-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .phase-time {
+            font-size: 13px;
+            padding: 4px 14px;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+        
+        .phase-desc {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        
+        .phase-1 .phase-header { border-color: #3498db; }
+        .phase-1 .phase-number { background: #3498db; }
+        .phase-1 .phase-title { color: #2980b9; }
+        .phase-1 .phase-time { background: #e3f2fd; color: #1976d2; }
+        
+        .phase-2 .phase-header { border-color: #e74c3c; }
+        .phase-2 .phase-number { background: #e74c3c; }
+        .phase-2 .phase-title { color: #c0392b; }
+        .phase-2 .phase-time { background: #ffebee; color: #c62828; }
+        
+        .phase-3 .phase-header { border-color: #27ae60; }
+        .phase-3 .phase-number { background: #27ae60; }
+        .phase-3 .phase-title { color: #1e8449; }
+        .phase-3 .phase-time { background: #e8f5e9; color: #2e7d32; }
+        
+        .phase-4 .phase-header { border-color: #9b59b6; }
+        .phase-4 .phase-number { background: #9b59b6; }
+        .phase-4 .phase-title { color: #7b1fa2; }
+        .phase-4 .phase-time { background: #f3e5f5; color: #7b1fa2; }
+        
+        .tasks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        
+        .task {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 16px;
+            border-left: 5px solid;
+        }
+        
+        .phase-1 .task { border-left-color: #3498db; }
+        .phase-2 .task { border-left-color: #e74c3c; }
+        .phase-3 .task { border-left-color: #27ae60; }
+        .phase-4 .task { border-left-color: #9b59b6; }
+        
+        .task-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .task-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .tag {
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+        
+        .tag-party {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .tag-party-b {
+            background: #fce4ec;
+            color: #c2185b;
+        }
+        
+        .tag-party-gov {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .tag-priority-high {
+            background: #ffebee;
+            color: #c62828;
+        }
+        
+        .tag-priority-medium {
+            background: #fff3e0;
+            color: #ef6c00;
+        }
+        
+        .tag-priority-low {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .tag-person {
+            background: #e0f2f1;
+            color: #00695c;
+        }
+        
+        .task-note {
+            font-size: 12px;
+            color: #64748b;
+            line-height: 1.5;
+            padding-top: 10px;
+            border-top: 1px dashed #e2e8f0;
+        }
+        
+        .note-highlight {
+            background: #fef9c3;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .note-alert {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        
+        .arrow {
+            text-align: center;
+            font-size: 28px;
+            color: rgba(255,255,255,0.5);
+            margin: 10px 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .summary-box {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+            color: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .summary-title {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .summary-list {
+            list-style: none;
+            font-size: 14px;
+            line-height: 2;
+        }
+        
+        .summary-list li {
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .summary-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+        
+        .footer-logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        
+        /* PC端优化 */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 960px;
+            }
+            
+            .header {
+                padding: 40px;
+            }
+            
+            .title {
+                font-size: 38px;
+            }
+            
+            .phase {
+                padding: 30px;
+            }
+            
+            .tasks {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* 手机端适配 */
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+                border-radius: 12px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 13px;
+            }
+            
+            .phase {
+                padding: 15px;
+                border-radius: 12px;
+            }
+            
+            .phase-header {
+                flex-wrap: wrap;
+            }
+            
+            .phase-number {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
+            
+            .phase-title {
+                font-size: 16px;
+            }
+            
+            .phase-time {
+                font-size: 11px;
+            }
+            
+            .tasks {
+                grid-template-columns: 1fr;
+            }
+            
+            .task {
+                padding: 12px;
+            }
+            
+            .task-name {
+                font-size: 14px;
+            }
+            
+            .summary-box {
+                padding: 18px;
+            }
+            
+            .summary-list {
+                font-size: 13px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 10px;
+            }
+            .phase {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">壹康科技为你保驾护航</h1>
+            <p class="subtitle">互联网诊疗审批全流程一图读懂</p>
+        </div>
+        
+        <!-- 第一阶段：环境准备 -->
+        <div class="phase phase-1">
+            <div class="phase-header">
+                <div class="phase-number">①</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">环境准备阶段</div>
+                    <div class="phase-time">约1个月</div>
+                </div>
+            </div>
+            <div class="phase-desc">三级等保测评是重点，按照新规可能需要甲方主体申请，周期约1个月，需尽早启动</div>
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-name">🔐 三级等保测评报告</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                    <div class="task-note">重点：需甲方主体申请，周期约1个月</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📱 微信小程序申请并认证</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">呼法亮</span>
+                    </div>
+                    <div class="task-note">用机构名申请最好过</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🖥️ 互联网诊疗系统部署</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🔗 HIS系统对接</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">💬 微信公众号、微信商户配置</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">呼法亮</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow">▼</div>
+        
+        <!-- 第二阶段：省监管平台对接 -->
+        <div class="phase phase-2">
+            <div class="phase-header">
+                <div class="phase-number">②</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">省监管平台对接</div>
+                    <div class="phase-time">约1个月</div>
+                </div>
+            </div>
+            <div class="phase-desc" style="color: #dc2626; font-weight: 500;">⚠️ 每月10号之前必须提交资料，否则有耽误审核资料的风险</div>
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-name">📝 签订平台合作协议</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">李娜</span>
+                    </div>
+                    <div class="task-note">独立申请不需要</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📄 公司资质材料提交</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">李娜</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">👨‍⚕️ 登记科室、医师、药师</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">李娜</span>
+                    </div>
+                    <div class="task-note">三年以上经验、60岁以下、第一执业点在本机构</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🔒 等保三级测评上传</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">李娜</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📑 制度材料准备</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">李娜</span>
+                    </div>
+                    <div class="task-note">乙方提供模版，大大小小几十个</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🎬 系统视频录制</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📚 技术文档编写</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🧪 测试数据对接</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                    <div class="task-note">一般在月底前几天进行</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">✅ 审核报告下发</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-gov">政府</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">谭明智</span>
+                    </div>
+                    <div class="task-note">里程碑：省平台审核通过，可进入下一阶段</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow">▼</div>
+        
+        <!-- 第三阶段：互联网诊疗审批 -->
+        <div class="phase phase-3">
+            <div class="phase-header">
+                <div class="phase-number">③</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">互联网诊疗审批</div>
+                    <div class="phase-time">时间弹性大</div>
+                </div>
+            </div>
+            <div class="phase-desc">诊所采用备案制，可能不需要线下实勘；需要机构积极做主管部门工作</div>
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-name">📝 提交医疗机构变更申请</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">谭明智</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📋 提交审批材料</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-high">高</span>
+                        <span class="tag tag-person">谭明智、呼法亮</span>
+                    </div>
+                    <div class="task-note">建议先去线下领取工作指引</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📊 准备线下审批内容</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">呼法亮、谭明智</span>
+                    </div>
+                    <div class="task-note">按《现场审查工作指引》准备，乙方提供模版</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🏥 卫健局线下检查</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">呼法亮、李付瑞</span>
+                    </div>
+                    <div class="task-note">诊室1间、音视频设备2套、制度上墙</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🏆 牌照下发</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-gov">政府</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">呼法亮</span>
+                    </div>
+                    <div class="task-note">关键里程碑：拿牌即具备上线条件</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrow">▼</div>
+        
+        <!-- 第四阶段：上线准备 -->
+        <div class="phase phase-4">
+            <div class="phase-header">
+                <div class="phase-number">④</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">上线准备阶段</div>
+                    <div class="phase-time">拿证即上线</div>
+                </div>
+            </div>
+            <div class="phase-desc">该阶段工作贯穿整个审批过程，第三阶段拿到牌照后即具备上线条件</div>
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-name">📋 小程序备案</div>
+                    <div class="task-info">
+                        <span class="tag tag-party">甲方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">谭明智、呼法亮</span>
+                    </div>
+                    <div class="task-note">前置条件：互联网诊疗申请下来</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">📲 患者小程序开发</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-medium">中</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🔄 正式数据对接</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-low">低</span>
+                        <span class="tag tag-person">杨涛</span>
+                    </div>
+                    <div class="task-note">系统上线必须对接</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🧪 系统测试</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-low">低</span>
+                        <span class="tag tag-person">谭明智</span>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-name">👨‍🏫 系统培训</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-low">低</span>
+                        <span class="tag tag-person">杨涛、李付瑞</span>
+                    </div>
+                    <div class="task-note">1次上门+多次线上培训</div>
+                </div>
+                <div class="task">
+                    <div class="task-name">🚀 正式上线</div>
+                    <div class="task-info">
+                        <span class="tag tag-party-b">乙方</span>
+                        <span class="tag tag-priority-low">低</span>
+                        <span class="tag tag-person">谭明智、杨涛</span>
+                    </div>
+                    <div class="task-note">正式进入计费周期</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="summary-box">
+            <div class="summary-title">⏱ 关键时间节点</div>
+            <ul class="summary-list">
+                <li>第一阶段：等保测评约1个月，需尽早启动</li>
+                <li>第二阶段：约1自然月，<span style="color:#fbbf24">每月10号前提交资料</span></li>
+                <li>第三阶段：时间弹性大，诊所备案制可能免实勘</li>
+                <li>整体周期：约2-3个月</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-logo">壹康科技</div>
+            <p>专业互联网医院解决方案服务商</p>
+        </div>
+    </div>
+</body>
+</html>
